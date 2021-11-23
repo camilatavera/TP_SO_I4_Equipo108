@@ -5,3 +5,27 @@ B- yellow
 C- blue
 
 D- ALFA
+
+
+
+E) Beta tuvo problemas al hacer el push
+
+F)! [rejected]        TESTING -> TESTING (fetch first)
+error: falló el push de algunas referencias a 'https://github.com/camilatavera/TP_SO_I4_Equipo108.git'
+ayuda: Actualizaciones fueron rechazadas porque el remoto contiene trabajo que
+ayuda: no existe localmente. Esto es causado usualmente por otro repositorio
+ayuda: realizando push a la misma ref. Quizás quiera integrar primero los cambios
+ayuda: remotos (ej. 'git pull ...') antes de volver a hacer push.
+ayuda: Vea 'Notes about fast-forwards0 en 'git push --help' para detalles.
+
+Sucedio esto ya que Alfa hizo push al repositorio remoto y Beta no actualizo su repositorio local antes de editar el index.html e intentar pushear
+
+G) La mejor solucion seria hacer un git pull origin TESTING para traer los cambios que hizo Alfa, ver que hizo y ahi decidir con que me quedo
+finalmente (Esto es lo que hicimos nosotros, asi quedaban los cambios de Alfa y Beta en el index.html )
+
+H) Si alguno hace un git push -f origin TESTING se va a pushear de manera forzada eliminando los cambios que hayan realizado los otros
+(Entonces si Beta hace push -f se van a eliminar los cambios de Alfa en el repositorio remoto)
+
+I) Tengo que ir a la rama DESARROLLO y de ahi hacer un git merge TESTING
+
+
